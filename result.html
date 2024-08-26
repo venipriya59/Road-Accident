@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>road accident</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        img[alt=pic] {
+            position: absolute;
+            z-index: -1;
+        }
+    </style>
+    <script>
+        function changetext(){
+          document.getElementById("ff").innerHTML="Prediction is:Yes, There is a Change Of Road Accident! Be Careful."
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <img src="images/g3.jpg" alt="pic" height="600px" width="1330px">
+        <div class="row fixed-top bg-secondary" style="padding-left: 15px;">
+            <div class="col">
+                <h1 class="text-light">ROAD<span class="text-danger" style="padding-left: 5px;">ACCIDENT</span></h1></div>
+                <div class="col" style="margin-left: 300px;">
+                    <nav class="navbar navbar-expand-sm">
+                        <ul class="navbar-nav">
+                            <li class="nav-item text-danger">HOME</li>
+                            <li class="nav-item text-light" style="margin-left: 20px;">LOGIN</li>
+                            <li class="nav-item text-light"style="margin-left: 20px;" >UPLOAD</li>
+                            <li class="nav-item text-light"style="margin-left: 20px;" >PREDICTION</li>
+                            <li class="nav-item text-light"style="margin-left: 20px;" >PERFORMANCE_ANALYSIS</li>
+                            <li class="nav-item text-light"style="margin-left: 20px;" >CHART</li>
+
+
+                            <li class="nav-item text-light" style="padding-left: 10px;"><button type="button" class="btn btn-danger">LOGOUT</button></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <h1 class="text-info text-center" style="padding-top: 300px;">A ROAD ACCIDENT PREDICTION</h1>
+            
+        </div>
+        <div class="container-fluid" style="margin-top: 300px;">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <td><b>State:</b></td>
+                        <td><select>
+                            
+                                <option>Andrapradesh</option>
+                                <option>Punjab</option>
+                                <option>Delhi</option>
+
+                                
+                            </select></td>
+                        <td><b>Junction:</b></td>
+                        <td><select>
+                            <option>T-junction</option>
+                            <option>Y-junction</option>
+                            <option>four arm-junction</option>
+                        </select></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Vehicle Age</th>
+                        <th><select>
+                                <option>Less Than & 5 years</option>
+                                <option>5.1 - 10 years</option>
+                                <option>10.1 - 15 years</option>
+                            </select></th>
+                        <th>Human's age and sex</th>
+                        <th><select>
+                            <option>18 yrs- male</option>
+                            <option>18 yrs- female</option>
+                            <option>18 - 25 yrs-male</option>
+                        </select></th>
+                    </tr>
+                    <tr>
+                        <th>Person</th>
+                        <th><select>
+                                <option>Drivers</option>
+                                <option>Passengers</option>
+                                <option>Driver</option>
+                            </select></th>
+                        <th>Area</th>
+                        <th><select>
+                            <option>Residential area</option>
+                            <option>Institutional area</option>
+                            <option>Village area</option>
+                        </select></th>
+                    </tr>
+                    <tr>
+                        <th>Type of Place</th>
+                        <th><select>
+                                <option>Urban</option>
+                                <option>Rural</option>
+                                <option>Forest</option>
+                            </select></th>
+                        <th>Load of vehicle</th>
+                        <th><select>
+                            <option>Normally Loaded</option>
+                            <option>Hangin</option>
+                            <option>Others</option>
+                        </select></th>
+                    </tr>
+                    <tr>
+                        <th>Traffic Rules Violation</th>
+                        <th><select>
+                                <option>Over speed</option>
+                                <option>Consumption of alcohol & Drug</option>
+                                <option>Driving on other side</option>
+                            </select></th>
+                        <th>Weather</th>
+                        <th><select>
+                            <option>Sunny/clear</option>
+                            <option>Rainy</option>
+                            <option>Foggy</option>
+                        </select></th>
+                    </tr>
+                
+
+                </tbody>
+            </table>
+
+
+            <button type="button" class="btn btn-info text-light" style="width: 80%;margin-left: 60px;">Predict</button>
+            <h1 style="text-align: center;padding-top: 20px;" id="ff" onmouseover="changetext()">Prediction is:</h1>
+        </div>
